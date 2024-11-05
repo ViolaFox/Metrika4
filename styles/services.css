@@ -1,0 +1,126 @@
+.services__title {
+  padding-bottom: 30px;
+  padding-left: 2px;
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+}
+
+.serv__list {
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 44px 10px;
+}
+
+.service {
+  width: calc(50% - 5px);
+  position: relative;
+}
+
+.service__img {
+  width: 100%;
+  height: 389px;
+  margin-bottom: 24px;
+
+  display: block;
+  position: relative;
+}
+
+.service__price {
+  top: 31px;
+  left: 30px;
+  height: 40px;
+  display: inline-block;
+  border-radius: 5px;
+  background: rgb(173, 24, 24);
+  font-size: 22px;
+  line-height: 40px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding-left: 20px;
+  padding-right: 22px;
+  position: absolute;
+}
+
+.service__name {
+  margin-left: 3px;
+  width: 343px;
+  color: rgb(255, 255, 255);
+}
+
+.services__link {
+  display: block;
+  width: 100%;
+  height: 153px;
+  border-radius: 5px;
+  border: none;
+  background: rgb(173, 24, 24);
+  cursor: pointer;
+  font-size: 28px;
+  line-height: 153px;
+  color: rgb(255, 255, 255);
+  font-family: "Manrope", sans-serif;
+}
+
+@media (max-width: 1199px) {
+  .serv__list {
+    row-gap: 87px;
+    margin-bottom: 87px;
+  }
+
+  .service__img {
+    height: 315px;
+    margin-bottom: 15px;
+  }
+
+  .service__price {
+    bottom: 31px;
+    left: 32px;
+    font-size: 20px;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+
+  .service__name {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .services__title {
+    padding-bottom: 20px;
+  }
+
+  .serv__list {
+    row-gap: 66px;
+    margin-bottom: 66px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .service__img {
+    margin-bottom: 10px;
+    height: 240px;
+  }
+
+  .service__price {
+    top: 23px;
+    left: 24px;
+    padding-left: 25px;
+    padding-right: 23px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 30px;
+    border-radius: 3.8px;
+  }
+
+  .services__link {
+    height: 100px;
+    font-size: 21px;
+    line-height: 100px;
+    border-radius: 3.8px;
+  }
+}

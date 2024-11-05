@@ -1,0 +1,93 @@
+.burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  background: rgba(0, 0, 0, 0.9);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.burger_open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.burger__content {
+  padding-top: 80px;
+  padding-left: 30px;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  transition: transform 0.3s linear;
+  transform: translateX(100%);
+}
+
+.burger_open .burger__content {
+  transform: translateX(0);
+}
+
+.burger__logo-link {
+  display: inline-block;
+  padding-bottom: 49px;
+}
+
+.burger__logo {
+  width: 156px;
+  height: 26px;
+}
+
+.burger__nav {
+  margin-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.burger__nav__link {
+  line-height: 34px;
+  font-size: 25px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.burger__nav__link:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  opacity: 50%;
+}
+
+.burger__contacts-title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.5;
+}
+
+.burger__contacts__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.burger__contacts {
+  width: 158px;
+  font-size: 20px;
+  line-height: 45.62ppx;
+  text-decoration: none;
+  color: rgb(18, 18, 18);
+  display: block;
+}
+
+.burger__contacts-mail {
+  width: 138px;
+}
+
+.burger__contacts:hover {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+  opacity: 50%;
+}

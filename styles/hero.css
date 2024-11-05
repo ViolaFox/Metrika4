@@ -1,0 +1,69 @@
+.hero__title {
+  margin-bottom: 28px;
+  max-width: 931px;
+  color: #121212;
+}
+
+.hero__box {
+  position: relative;
+  width: 100%;
+  height: 500px;
+
+  background-image: url("../resources/Rectangle\ 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.hero__text {
+  bottom: 40px;
+  left: 42px;
+  position: absolute;
+  font-size: 20px;
+  line-height: normal;
+  max-width: 430px;
+  color: white;
+}
+
+@media (max-width: 1199px) {
+  .hero__title {
+    margin-bottom: 30px;
+    max-width: 776px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .hero__box {
+    background-image: url("../resources/Rectangle\ 1\ tablet.png");
+    height: 400px;
+  }
+
+  .hero__text {
+    bottom: 30px;
+    left: 42px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero__title {
+    margin-bottom: 25px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 31.62px;
+  }
+
+  .hero__text {
+    bottom: 15px;
+    left: 15px;
+    width: 312px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero__box {
+    background-image: url("../resources/Rectangle\ 1\ mobile.png");
+    height: 304px;
+  }
+}
